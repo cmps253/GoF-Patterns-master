@@ -1,0 +1,1 @@
+For Singleton, Abstract Factory, and Factory Method check out the Java dynamic logger framework we did in class
