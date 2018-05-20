@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "..\..\..\Desktop\Trash\patterns\GoF-Patterns\State\State.csproj", "{E310ADE0-AE6A-4E14-ACD0-00F7614E0B0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDriven", "EventDriven\EventDriven.csproj", "{82C1966F-3232-4186-9596-73CD80F8A1BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,10 @@ Global
 		{E310ADE0-AE6A-4E14-ACD0-00F7614E0B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E310ADE0-AE6A-4E14-ACD0-00F7614E0B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E310ADE0-AE6A-4E14-ACD0-00F7614E0B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C1966F-3232-4186-9596-73CD80F8A1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C1966F-3232-4186-9596-73CD80F8A1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C1966F-3232-4186-9596-73CD80F8A1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C1966F-3232-4186-9596-73CD80F8A1BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +108,7 @@ Global
 		{ECE9EC3A-8333-4D0A-BBA5-9864150536C9} = {8A716ADF-B287-4D09-BFDF-50B15A1298BF}
 		{2BBDD524-F526-4DE2-B4A1-309D01759DE9} = {8A716ADF-B287-4D09-BFDF-50B15A1298BF}
 		{E310ADE0-AE6A-4E14-ACD0-00F7614E0B0B} = {7D294023-491A-4439-BDF7-851AC30DC959}
+		{82C1966F-3232-4186-9596-73CD80F8A1BB} = {4E96EA74-E902-4D35-9059-852EEBA990C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BC94273-58ED-4833-9AF1-902058A5618B}
