@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categories.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="DataAccessObject.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />

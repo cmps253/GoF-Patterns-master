@@ -9,7 +9,7 @@
         public void SpeedUp()
         {
             speed++;
-            if (speed > 2)
+            if (speed > 2 && OnCrash!=null)
             {
                 OnCrash();
             }
