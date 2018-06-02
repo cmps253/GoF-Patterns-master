@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDriven", "EventDriven\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj", "{86A5B14F-F162-4747-A22B-BA3289A6ED8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreter", "Interpreter\Interpreter.csproj", "{3DF991C0-48AD-47E5-AE6B-A7B3BE1BDF5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{86A5B14F-F162-4747-A22B-BA3289A6ED8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86A5B14F-F162-4747-A22B-BA3289A6ED8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86A5B14F-F162-4747-A22B-BA3289A6ED8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DF991C0-48AD-47E5-AE6B-A7B3BE1BDF5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DF991C0-48AD-47E5-AE6B-A7B3BE1BDF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DF991C0-48AD-47E5-AE6B-A7B3BE1BDF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DF991C0-48AD-47E5-AE6B-A7B3BE1BDF5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +115,7 @@ Global
 		{2BBDD524-F526-4DE2-B4A1-309D01759DE9} = {8A716ADF-B287-4D09-BFDF-50B15A1298BF}
 		{82C1966F-3232-4186-9596-73CD80F8A1BB} = {4E96EA74-E902-4D35-9059-852EEBA990C6}
 		{86A5B14F-F162-4747-A22B-BA3289A6ED8B} = {7D294023-491A-4439-BDF7-851AC30DC959}
+		{3DF991C0-48AD-47E5-AE6B-A7B3BE1BDF5D} = {7D294023-491A-4439-BDF7-851AC30DC959}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BC94273-58ED-4833-9AF1-902058A5618B}
