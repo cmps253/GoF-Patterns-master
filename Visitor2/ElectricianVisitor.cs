@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace Visitor
+namespace CMPS253.GoFPatterns.Behavioral.Visitor2
 {
     public class ElectricianVisitor : IVisitor
     {
         public void Visit(IVisitable element)
         {
             var room = element as Room;
-            Console.WriteLine($"Turning the lights off for room {room.Name}");
+            Console.WriteLine($"Replacing burnt light bulbs for room {room.Name}");
         }
     }
 }

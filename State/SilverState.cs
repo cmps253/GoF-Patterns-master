@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMPS253.GoFPatterns.State
+namespace CMPS253.GoFPatterns.Behavioral.State
 {
     public class SilverState : State
     {

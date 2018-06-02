@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CMPS253.GoFPatterns.ChainOfResponsibility
+namespace CMPS253.GoFPatterns.Behavioral.ChainOfResponsibility
 {
     public abstract class Approver
     {

@@ -1,4 +1,7 @@
-﻿interface IInvestor //investor is an observer
+﻿namespace CMPS253.GoFPatterns.Behavioral.Observer
 {
-    void Update(Stock stock);
+    interface IInvestor //investor is an observer
+    {
+        void Update(Stock stock);
+    }
 }

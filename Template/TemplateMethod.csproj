@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EE731883-D93A-44E5-ADE0-54F1999B5B70}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Template</RootNamespace>
+    <RootNamespace>CMPS253.GoFPatterns.Behavioral.Template</RootNamespace>
     <AssemblyName>Template</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categories.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="DataAccessObject.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Program.cs" />

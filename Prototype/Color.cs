@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Prototype
+namespace CMPS253.GoFPatterns.Creational.Prototype
 {
     public class Color : ICloneable
     {

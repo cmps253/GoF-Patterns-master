@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Visitor
+namespace CMPS253.GoFPatterns.Behavioral.Visitor
 {
     class Towns
     {

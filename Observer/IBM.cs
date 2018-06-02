@@ -1,6 +1,9 @@
-﻿class IBM : Stock
+﻿namespace CMPS253.GoFPatterns.Behavioral.Observer
 {
-    public IBM(string symbol, double price): base(symbol, price)
+    class IBM : Stock
     {
+        public IBM(string symbol, double price) : base(symbol, price)
+        {
+        }
     }
 }

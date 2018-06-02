@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CMPS253.GoFPatterns.Decorator
+namespace CMPS253.GoFPatterns.Structural.Decorator
 {
     public class Circle : IShape
     {

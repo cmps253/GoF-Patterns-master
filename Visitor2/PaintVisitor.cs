@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Visitor
+namespace CMPS253.GoFPatterns.Behavioral.Visitor2
 {
     class PaintVisitor : IVisitor
     {

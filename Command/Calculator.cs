@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CMPS253.GoFPatterns.Command
+namespace CMPS253.GoFPatterns.Behavioral.Command
 {
     public class Calculator
     {

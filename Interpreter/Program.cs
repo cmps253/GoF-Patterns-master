@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CMPS253.GoFPatterns.Command.Behaviroal.Interpreter
+namespace CMPS253.GoFPatterns.Behavioral.Interpreter
 {
     class MainApp
     {

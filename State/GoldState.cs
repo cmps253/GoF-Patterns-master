@@ -1,4 +1,4 @@
-﻿namespace CMPS253.GoFPatterns.State
+﻿namespace CMPS253.GoFPatterns.Behavioral.State
 {
     public class GoldState : State
     {

@@ -1,47 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
-
-abstract class Stock
+namespace CMPS253.GoFPatterns.Behavioral.Observer
 {
-    public string Symbol { get; set; }
-    private double _price;
-    private List<IInvestor> _investors = new List<IInvestor>();
-
-    public Stock(string symbol, double price)
+    abstract class Stock
     {
-        this.Symbol = symbol;
-        this._price = price;
-    }
+        public string Symbol { get; set; }
+        private double _price;
+        private List<IInvestor> _investors = new List<IInvestor>();
 
-    public void Attach(IInvestor investor)
-    {
-        _investors.Add(investor);
-    }
-
-    public void Detach(IInvestor investor)
-    {
-        _investors.Remove(investor);
-    }
-
-    public void Notify()
-    {
-        foreach (IInvestor investor in _investors)
+        public Stock(string symbol, double price)
         {
-            investor.Update(this);
+            this.Symbol = symbol;
+            this._price = price;
         }
 
-        Console.WriteLine("");
-    }
-
-    public double Price
-    {
-        get { return _price; }
-        set
+        public void Attach(IInvestor investor)
         {
-            if (_price != value)
+            _investors.Add(investor);
+        }
+
+        public void Detach(IInvestor investor)
+        {
+            _investors.Remove(investor);
+        }
+
+        public void Notify()
+        {
+            foreach (IInvestor investor in _investors)
             {
-                _price = value;
-                Notify();
+                investor.Update(this);
+            }
+
+            Console.WriteLine("");
+        }
+
+        public double Price
+        {
+            get { return _price; }
+            set
+            {
+                if (_price != value)
+                {
+                    _price = value;
+                    Notify();
+                }
             }
         }
     }

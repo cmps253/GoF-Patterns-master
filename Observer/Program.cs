@@ -1,4 +1,4 @@
-﻿namespace cmps253.patterns.gof.Observer
+﻿namespace CMPS253.GoFPatterns.Behavioral.Observer
 {
     class MainApp
     {

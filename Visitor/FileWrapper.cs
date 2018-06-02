@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Visitor
+namespace CMPS253.GoFPatterns.Behavioral.Visitor
 {
     public class FileWrapper
     {

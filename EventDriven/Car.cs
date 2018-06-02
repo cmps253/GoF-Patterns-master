@@ -1,4 +1,4 @@
-﻿namespace MyApp
+﻿namespace CMPS253.AdvancedTopics.EventDrivenProgramming
 {
     public class Car
     {

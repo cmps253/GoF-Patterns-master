@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{ECE9EC3A-8333-4D0A-BBA5-9864150536C9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp4</RootNamespace>
+    <RootNamespace>CMPS253.GoFPatterns.Creational.Builder</RootNamespace>
     <AssemblyName>ConsoleApp4</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

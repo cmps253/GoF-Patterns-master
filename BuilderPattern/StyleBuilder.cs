@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace ConsoleApp4
+namespace CMPS253.GoFPatterns.Creational.Builder
 {
     public class StyleBuilder
     {

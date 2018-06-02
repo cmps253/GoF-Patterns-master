@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CMPS253.AdvancedTopics
+namespace CMPS253.AdvancedTopics.Reflection
 {
     class Program
     {

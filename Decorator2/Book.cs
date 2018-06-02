@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CMPS253.GoFPatterns.Decorator2
+namespace CMPS253.GoFPatterns.Structural.Decorator2
 {
     public class Book : LibraryItem
     {

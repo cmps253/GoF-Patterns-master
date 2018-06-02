@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Visitor
+namespace CMPS253.GoFPatterns.Behavioral.Visitor
 {
     public class TownsAbove : IVisitor
     {

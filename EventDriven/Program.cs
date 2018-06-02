@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyApp
+namespace CMPS253.AdvancedTopics.EventDrivenProgramming
 {
     static class Program
     {

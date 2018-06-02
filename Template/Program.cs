@@ -1,4 +1,4 @@
-﻿namespace cmps253.patterns.gof.TemplateMethod
+﻿namespace CMPS253.GoFPatterns.Behavioral.Template
 {
     class MainApp
     {

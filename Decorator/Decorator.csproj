@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{99CC1888-D1AA-4A5C-994B-F539026EAD4F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Decorator</RootNamespace>
+    <RootNamespace>CMPS253.GoFPatterns.Structural.Decorator</RootNamespace>
     <AssemblyName>Decorator</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

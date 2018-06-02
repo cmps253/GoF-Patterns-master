@@ -2,25 +2,28 @@
 using System.Data;
 using System.Data.OleDb;
 
-class Products : DataAccessObject
+namespace CMPS253.GoFPatterns.Behavioral.Template
 {
-    public override void Select()
+    public class Products : DataAccessObject
     {
-        string sql = "select ProductName from Products";
-        OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sql, connectionString);
-
-        dataSet = new DataSet();
-        dataAdapter.Fill(dataSet, "Products");
-    }
-
-    public override void Process()
-    {
-        Console.WriteLine("Products ---- ");
-        DataTable dataTable = dataSet.Tables["Products"];
-        foreach (DataRow row in dataTable.Rows)
+        public override void Select()
         {
-            Console.WriteLine(row["ProductName"]);
+            string sql = "select ProductName from Products";
+            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sql, connectionString);
+
+            dataSet = new DataSet();
+            dataAdapter.Fill(dataSet, "Products");
         }
-        Console.WriteLine();
+
+        public override void Process()
+        {
+            Console.WriteLine("Products ---- ");
+            DataTable dataTable = dataSet.Tables["Products"];
+            foreach (DataRow row in dataTable.Rows)
+            {
+                Console.WriteLine(row["ProductName"]);
+            }
+            Console.WriteLine();
+        }
     }
 }

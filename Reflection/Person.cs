@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace CMPS253.AdvancedTopics
+namespace CMPS253.AdvancedTopics.Reflection
 {
     class Person : BaseEntity
     {

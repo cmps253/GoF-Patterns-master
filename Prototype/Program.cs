@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Prototype
+namespace CMPS253.GoFPatterns.Creational.Prototype
 {
     class MainApp
     {

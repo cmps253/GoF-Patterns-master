@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Linq;
 using System.ComponentModel.DataAnnotations;
 
-namespace CMPS253.AdvancedTopics
+namespace CMPS253.AdvancedTopics.Reflection
 {
     class BaseEntity
     {

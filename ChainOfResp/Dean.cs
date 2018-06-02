@@ -1,4 +1,4 @@
-﻿namespace CMPS253.GoFPatterns.ChainOfResponsibility
+﻿namespace CMPS253.GoFPatterns.Behavioral.ChainOfResponsibility
 {
     public class Dean : Approver
     {

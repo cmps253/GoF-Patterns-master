@@ -1,17 +1,19 @@
 ﻿using System;
-
-class Investor : IInvestor
+namespace CMPS253.GoFPatterns.Behavioral.Observer
 {
-    private string _name;
-    private Stock Stock { get; set; }
-
-    public Investor(string name)
+    class Investor : IInvestor
     {
-        this._name = name;
-    }
+        private string _name;
+        private Stock Stock { get; set; }
 
-    public void Update(Stock stock)
-    {
-        Console.WriteLine($"Notified {_name} of {stock.Symbol}'s change to {stock.Price:C}");
+        public Investor(string name)
+        {
+            this._name = name;
+        }
+
+        public void Update(Stock stock)
+        {
+            Console.WriteLine($"Notified {_name} of {stock.Symbol}'s change to {stock.Price:C}");
+        }
     }
 }

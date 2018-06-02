@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E3157844-AC60-43C0-880E-FE5E242EE910}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Observer</RootNamespace>
+    <RootNamespace>CMPS253.GoFPatterns.Behavioral.Observer</RootNamespace>
     <AssemblyName>Observer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

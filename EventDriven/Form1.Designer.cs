@@ -1,4 +1,4 @@
-﻿namespace MyApp
+﻿namespace CMPS253.AdvancedTopics.EventDrivenProgramming
 {
     partial class Form1
     {

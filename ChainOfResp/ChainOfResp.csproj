@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{04E9EFF1-E725-4E57-9D2C-CBB441CA7495}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CMPS253.GoFPatterns</RootNamespace>
+    <RootNamespace>CMPS253.GoFPatterns.Behavioral.ChainOfResponsibility</RootNamespace>
     <AssemblyName>ChainOfResp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

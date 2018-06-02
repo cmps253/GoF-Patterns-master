@@ -1,4 +1,4 @@
-﻿namespace CMPS253.GoFPatterns.Decorator
+﻿namespace CMPS253.GoFPatterns.Structural.Decorator
 {
     class Program
     {

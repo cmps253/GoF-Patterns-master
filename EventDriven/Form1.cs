@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
-namespace MyApp
+namespace CMPS253.AdvancedTopics.EventDrivenProgramming
 {
     public partial class Form1 : Form
     {
