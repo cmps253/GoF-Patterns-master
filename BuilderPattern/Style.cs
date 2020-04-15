@@ -4,11 +4,16 @@
     {
         public string Color;
         public string BackColor;
-        public float FontSize;
-
-        public override string ToString()
+        public float? FontSize;
+        public string RawStyle => $"color:{Color};background-color:{BackColor};font-size:{FontSize}px;";
+        public static string Stringify(string s) => $"style='{s}'";
+        public override string ToString() => Stringify(RawStyle);
+        public Style Add(Style that)
         {
-            return $"style='color:{Color};background-color:{BackColor};font-size:{FontSize}em;'";
+            string color= this.Color ?? that.Color;
+            string backColor= this.BackColor ?? that.BackColor;
+            float? fontSize = this.FontSize ?? that.FontSize;
+            return new Style() { Color = color, BackColor = backColor, FontSize = fontSize };
         }
     }
 }

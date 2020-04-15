@@ -2,6 +2,6 @@
 {
     public interface IVisitor
     {
-        void Visit(IVisitable element);
+        void Visit(IVisitable visitable);
     }
 }

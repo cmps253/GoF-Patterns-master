@@ -1,11 +1,9 @@
 ﻿using System;
 namespace CMPS253.GoFPatterns.Behavioral.Observer
 {
-    class Investor : IInvestor
+    class Investor : IInvestor //investor is an observer
     {
         private string _name;
-        private Stock Stock { get; set; }
-
         public Investor(string name)
         {
             this._name = name;
@@ -13,7 +11,15 @@ namespace CMPS253.GoFPatterns.Behavioral.Observer
 
         public void Update(Stock stock)
         {
-            Console.WriteLine($"Notified {_name} of {stock.Symbol}'s change to {stock.Price:C}");
+            if (stock.Price <= 120)
+            {
+                Console.WriteLine($"{stock.Symbol} fell to {stock.Price}, Buy!!");
+
+            }
+            else if (stock.Price > 120)
+            {
+                Console.WriteLine($"{stock.Symbol} rose to {stock.Price}, Sell!!");
+            }
         }
     }
 }

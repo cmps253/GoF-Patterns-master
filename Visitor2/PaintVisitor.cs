@@ -4,9 +4,9 @@ namespace CMPS253.GoFPatterns.Behavioral.Visitor2
 {
     class PaintVisitor : IVisitor
     {
-        public void Visit(IVisitable element)
+        public void Visit(IVisitable visitable)
         {
-            var room = element as Room;
+            var room = visitable as Room;
             Console.WriteLine($"Painting room : {room.Name}");
         }
     }

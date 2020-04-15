@@ -4,7 +4,6 @@ namespace CMPS253.GoFPatterns.Behavioral.Observer
 {
     abstract class Stock
     {
-        public string Symbol { get; set; }
         private double _price;
         private List<IInvestor> _investors = new List<IInvestor>();
 
@@ -13,6 +12,7 @@ namespace CMPS253.GoFPatterns.Behavioral.Observer
             this.Symbol = symbol;
             this._price = price;
         }
+        public string Symbol { get; set; }
 
         public void Attach(IInvestor investor)
         {

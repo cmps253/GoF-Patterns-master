@@ -4,7 +4,9 @@ namespace CMPS253.GoFPatterns.Creational.Builder
 {
     public class StyleBuilder
     {
-        Style style;
+        private Style style;
+
+        #region Constructors and factories
         StyleBuilder()
         {
             style = new Style();
@@ -13,7 +15,8 @@ namespace CMPS253.GoFPatterns.Creational.Builder
         public static StyleBuilder CreateInstance()
         {
             return new StyleBuilder();
-        }
+        } 
+        #endregion
 
         public StyleBuilder AddColor(string color)
         {

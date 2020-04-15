@@ -4,6 +4,7 @@
     {
         Div div;
 
+        #region Constructors
         DivBuilder(string value)
         {
             div = new Div(value);
@@ -12,7 +13,8 @@
         public static DivBuilder CreateInstance(string value)
         {
             return new DivBuilder(value);
-        }
+        } 
+        #endregion
 
         public DivBuilder AddStyle(Style style)
         {

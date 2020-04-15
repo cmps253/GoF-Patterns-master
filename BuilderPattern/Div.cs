@@ -12,7 +12,7 @@
 
         public override string ToString()
         {
-            return $"<div {style.ToString()}>{value}</div>";
+            return $"<div {style?.ToString()}>{value}</div>";
         }
     }
 }
