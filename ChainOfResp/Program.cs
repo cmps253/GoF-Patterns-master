@@ -10,16 +10,16 @@
             Approver deptChair = new DepartmentChair(dean);
 
             // Approve candidates
-            GraduateAssistant p = new GraduateAssistant("201500001", 3.8, "Sally Jones");
-            deptChair.ApproveGA(p);
+            //GraduateAssistant p = new GraduateAssistant("201500001", 3.8, "Sally Jones");
+            //deptChair.ApproveGA(p);
 
-            p = new GraduateAssistant("201500002", 3.4, "Adam Bing");
-            deptChair.ApproveGA(p);
+            //var p = new GraduateAssistant("201500002", 3.4, "Adam Bing");
+            //deptChair.ApproveGA(p);
 
-            p = new GraduateAssistant("201500003", 3.0, "Lucas Jade");
-            deptChair.ApproveGA(p);
+            //var p = new GraduateAssistant("201500003", 3.0, "Lucas Jade");
+            //deptChair.ApproveGA(p);
 
-            p = new GraduateAssistant("201500004", 2.9, "Joe Smith");
+            var p = new GraduateAssistant("201500004", 2.9, "Joe Smith");
             deptChair.ApproveGA(p);
         }
     }

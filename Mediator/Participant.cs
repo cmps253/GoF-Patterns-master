@@ -4,7 +4,7 @@ namespace CMPS253.GoFPatterns.Behavioral.Mediator
 {
     public class Participant
     {
-        public Chatroom Chatroom { get; internal set; }
+        public BaseChatroom Chatroom { get; internal set; }
         public string Name { get; private set; }
 
         // Constructor
@@ -14,15 +14,15 @@ namespace CMPS253.GoFPatterns.Behavioral.Mediator
         }
 
         // Sends message to given participant
-        public void Send(string to, string message)
+        public void Send(string recipient, string message)
         {
-            Chatroom.Send(Name, to, message);
+            Chatroom.Send(Name, recipient, message);
         }
 
         // Receives message from given participant
-        public virtual void Receive(string from, string message)
+        public virtual void Receive(string sender, string message)
         {
-            Console.WriteLine($"{from} to {Name}: '{message}'");
+            Console.WriteLine($"{sender} to {Name}: '{message}'");
         }
     }
 }

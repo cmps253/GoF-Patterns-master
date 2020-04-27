@@ -1,8 +1,8 @@
 ﻿namespace CMPS253.GoFPatterns.Behavioral.Mediator
 {
-    public abstract class AbstractChatroom
+    public abstract class BaseChatroom
     {
         public abstract void Register(Participant participant);
-        public abstract void Send(string from, string to, string message);
+        public abstract void Send(string sender, string receiver, string message);
     }
 }

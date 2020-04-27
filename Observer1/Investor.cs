@@ -11,14 +11,14 @@ namespace CMPS253.GoFPatterns.Behavioral.Observer
 
         public void Update(Stock stock)
         {
-            if (stock.Price <= 120)
+            if (stock.getPrice() <= 120)
             {
-                Console.WriteLine($"{stock.Symbol} fell to {stock.Price}, Buy!!");
+                Console.WriteLine($"{_name}: {stock.getSymbol()} fell to {stock.getPrice()}, Buy!!");
 
             }
-            else if (stock.Price > 120)
+            else if (stock.getPrice() > 120)
             {
-                Console.WriteLine($"{stock.Symbol} rose to {stock.Price}, Sell!!");
+                Console.WriteLine($"{_name}: {stock.getSymbol()} rose to {stock.getPrice()}, Sell!!");
             }
         }
     }

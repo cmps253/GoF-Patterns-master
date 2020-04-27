@@ -1,6 +1,6 @@
 ﻿namespace CMPS253.GoFPatterns.Behavioral.Interpreter
 {
-    public class HundredExpression : Expression
+    public class HundredExpression : BaseExpression
     {
         public override string One() { return "C"; }
         public override string Four() { return "CD"; }

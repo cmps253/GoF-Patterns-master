@@ -12,15 +12,13 @@ namespace CMPS253.GoFPatterns.Behavioral.Interpreter
             string roman = "MCMXXVIII";
             Context context = new Context(roman);
 
-            // Build the 'parse tree'
-            List<Expression> tree = new List<Expression>();
+            List<BaseExpression> tree = new List<BaseExpression>();
             tree.Add(new ThousandExpression());
             tree.Add(new HundredExpression());
             tree.Add(new TenExpression());
             tree.Add(new OneExpression());
 
-            // Interpret
-            foreach (Expression exp in tree)
+            foreach (BaseExpression exp in tree)
             {
                 exp.Interpret(context);
             }

@@ -2,7 +2,7 @@
 
 namespace CMPS253.GoFPatterns.Behavioral.Command
 {
-    public class Calculator
+    public class Calculator //receiver
     {
         private int total = 0;
 

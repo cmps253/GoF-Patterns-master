@@ -9,7 +9,7 @@ namespace CMPS253.GoFPatterns.Behavioral.Visitor
            
             #region old
             var towns = new Towns();
-            var w = new FileWrapper(@"C:\Users\teach\Desktop\253s1\Lebanon_Villages_elevations.csv");
+            var w = new FileWrapper(@"C:\Users\bdeir\OneDrive - American University of Beirut\Lebanon_Villages_elevations.csv");
             foreach (var line in w.Records)
             {
                 towns.Attach(new Town(line.getTown(), line.getElevation()));
@@ -17,8 +17,8 @@ namespace CMPS253.GoFPatterns.Behavioral.Visitor
 
             towns.Accept(new PopulationVisitor());
             towns.Accept(new ElevationVisitor());
-            towns.Accept(new Politician());
-            towns.Accept(new TownsAbove(1000));
+            //towns.Accept(new Politician());
+            //towns.Accept(new TownsAbove(1000));
             towns.Visit();
             #endregion
         }

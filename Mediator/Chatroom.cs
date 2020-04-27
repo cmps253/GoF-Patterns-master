@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace CMPS253.GoFPatterns.Behavioral.Mediator
 {
-    public class Chatroom : AbstractChatroom
+    public class Chatroom : BaseChatroom
     {
         Dictionary<string, Participant> _participants = new Dictionary<string, Participant>();
 
@@ -20,13 +16,13 @@ namespace CMPS253.GoFPatterns.Behavioral.Mediator
             participant.Chatroom = this;
         }
 
-        public override void Send(string from, string to, string message)
+        public override void Send(string sender, string recipient, string message)
         {
-            Participant participant = _participants[to];
+            Participant participant = _participants[recipient];
 
             if (participant != null)
             {
-                participant.Receive(from, message);
+                participant.Receive(sender, message);
             }
         }
     }

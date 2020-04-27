@@ -12,9 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{99CC1888-D1AA-4A5C-994B-F539026EAD4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{8A716ADF-B287-4D09-BFDF-50B15A1298BF}"
-	ProjectSection(SolutionItems) = preProject
-		readme.txt = readme.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{7D294023-491A-4439-BDF7-851AC30DC959}"
 EndProject
@@ -24,11 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Advanced Programming Techni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection_and_Annotation", "Reflection\Reflection_and_Annotation.csproj", "{0FFC809F-F76A-42F5-8716-CF9A2337EDDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{E3157844-AC60-43C0-880E-FE5E242EE910}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer2", "Observer\Observer2.csproj", "{E3157844-AC60-43C0-880E-FE5E242EE910}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "Template\TemplateMethod.csproj", "{EE731883-D93A-44E5-ADE0-54F1999B5B70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{96CCE659-02F8-4A70-8ED2-A8AC733CE464}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor2", "Visitor\Visitor2.csproj", "{96CCE659-02F8-4A70-8ED2-A8AC733CE464}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "BuilderPattern\Builder.csproj", "{ECE9EC3A-8333-4D0A-BBA5-9864150536C9}"
 EndProject
@@ -42,7 +39,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{B1871A3A-963F-4636-A56A-8AA5B11983A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor2", "Visitor2\Visitor2.csproj", "{AFE5055E-2EEC-4504-A763-30B7CF68F60C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor1", "Visitor2\Visitor1.csproj", "{AFE5055E-2EEC-4504-A763-30B7CF68F60C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "ColorPrototype\Prototype.csproj", "{75A77DBE-6FCE-48DA-BD99-24C5A58E7F10}"
 EndProject
@@ -53,6 +50,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceCreamParlor", "IceCreamParlor\IceCreamParlor.csproj", "{EDB880FA-9F6A-4405-AD74-74445AEB93D1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder Pattern", "Builder Pattern", "{31F6FAC2-A906-4D2D-95EC-17D99CF533D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer1", "Observer1\Observer1.csproj", "{4F2322C7-C82A-403E-864F-C9D60A8BCBAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -136,6 +135,10 @@ Global
 		{EDB880FA-9F6A-4405-AD74-74445AEB93D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDB880FA-9F6A-4405-AD74-74445AEB93D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDB880FA-9F6A-4405-AD74-74445AEB93D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2322C7-C82A-403E-864F-C9D60A8BCBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2322C7-C82A-403E-864F-C9D60A8BCBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2322C7-C82A-403E-864F-C9D60A8BCBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2322C7-C82A-403E-864F-C9D60A8BCBAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -161,6 +164,7 @@ Global
 		{6C74603D-2556-4875-A05A-73BCF0B8D2B0} = {31F6FAC2-A906-4D2D-95EC-17D99CF533D7}
 		{EDB880FA-9F6A-4405-AD74-74445AEB93D1} = {31F6FAC2-A906-4D2D-95EC-17D99CF533D7}
 		{31F6FAC2-A906-4D2D-95EC-17D99CF533D7} = {8A716ADF-B287-4D09-BFDF-50B15A1298BF}
+		{4F2322C7-C82A-403E-864F-C9D60A8BCBAE} = {7D294023-491A-4439-BDF7-851AC30DC959}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BC94273-58ED-4833-9AF1-902058A5618B}

@@ -6,24 +6,18 @@
         {
             Chatroom chatroom = new Chatroom();
 
-            Participant George = new Beatle("George");
-            Participant Paul = new Beatle("Paul");
-            Participant Ringo = new Beatle("Ringo");
-            Participant John = new Beatle("John");
-            Participant Yoko = new NonBeatle("Yoko");
+            Participant Joe = new Participant("Joe");
+            Participant Sally = new Participant("Sally");
+            Participant Ted = new Participant("Ted");
 
-            chatroom.Register(George);
-            chatroom.Register(Paul);
-            chatroom.Register(Ringo);
-            chatroom.Register(John);
-            chatroom.Register(Yoko);
+            chatroom.Register(Joe);
+            chatroom.Register(Sally);
+            chatroom.Register(Ted);
 
             // Chatting participants
-            Yoko.Send("John", "Hi John!");
-            Paul.Send("Ringo", "All you need is love");
-            Ringo.Send("George", "My sweet Lord");
-            Paul.Send("John", "Can't buy me love");
-            John.Send("Yoko", "My sweet love");
+            Sally.Send("Ted", "Good morning");
+            Ted.Send("Joe", "How are you?");
+            Joe.Send("Sally", "I am done");
         }
     }
 }

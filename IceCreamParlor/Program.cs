@@ -1,4 +1,7 @@
-﻿using System;
+﻿using IceCreamParlor.Containers;
+using IceCreamParlor.Flavors;
+using IceCreamParlor.Toppings;
+using System;
 
 namespace IceCreamParlor
 {
@@ -7,14 +10,41 @@ namespace IceCreamParlor
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to CMPS253 Ice Cream Parlor");
-            IceCreamServing builder  = 
-                IceCreamServingBuilder.CreateInstance(Cone.SugarCone)
-                .AddScoop(Scoop.ChocolateScoop)
-                .AddScoop(Scoop.StrawberryScoop)
-                .AddScoop(Scoop.VanillaScoop)
-                .AddToping(Toping.ChocoFlakes)
-                .AddToping(Toping.KitKat)
+
+            IceCreamBuilder builder=null;
+
+            Console.WriteLine("Would you like a cup(u) or a cone(o)?");
+            string container = Console.ReadLine().ToLower();
+            
+            string doughtype = null;
+            if(container=="o")
+            {
+                Console.WriteLine("What kind of a cone?");
+                doughtype = Console.ReadLine().ToLower();
+            }
+
+            Console.WriteLine("What size of serving?");
+            string size = Console.ReadLine().ToLower();
+
+
+            //Fluent Interface
+            IceCream IceCream  = 
+                
+                IceCreamBuilder.CreateInstance(new SugarCone())
+                
+                .AddScoop(ChocolateScoop.Instance)
+                .AddScoop(StrawberryScoop.Instance)
+                .AddScoop(VanillaScoop.Instance)
+                .AddScoop(VanillaScoop.Instance)
+                .AddScoop(StrawberryScoop.Instance)
+
+                .AddTopping(ChocoFlakesTopping.Instance)
+                .AddTopping(KitKatTopping.Instance)
+                .AddTopping(SprinklesTopping.Instance)
+                
                 .Build();
+
+            Console.WriteLine(IceCream);
         }
     }
 }

@@ -42,10 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractChatroom.cs" />
-    <Compile Include="Beatle.cs" />
+    <Compile Include="BaseChatroom.cs" />
     <Compile Include="Chatroom.cs" />
-    <Compile Include="NonBeatle.cs" />
     <Compile Include="Participant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

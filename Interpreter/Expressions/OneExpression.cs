@@ -1,6 +1,6 @@
 ﻿namespace CMPS253.GoFPatterns.Behavioral.Interpreter
 {
-    public class OneExpression : Expression
+    public class OneExpression : BaseExpression
     {
         public override string One() { return "I"; }
         public override string Four() { return "IV"; }

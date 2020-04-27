@@ -6,11 +6,11 @@
         {
             SortedList studentRecords = new SortedList();
 
-            studentRecords.Add("Samual");
+            studentRecords.Add("Joe");
+            studentRecords.Add("Ted");
+            studentRecords.Add("Sally");
+            studentRecords.Add("Joan");
             studentRecords.Add("Jimmy");
-            studentRecords.Add("Sandra");
-            studentRecords.Add("Vivek");
-            studentRecords.Add("Anna");
 
             studentRecords.SetSortStrategy(new QuickSort());
             studentRecords.Sort();

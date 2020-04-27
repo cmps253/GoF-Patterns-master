@@ -18,7 +18,7 @@
         {
             interest = 0.05;
             lowerLimit = 1000.0;
-            upperLimit = 10000000.0;
+            upperLimit = 10_000_000.0;
         }
 
         public override void Deposit(double amount)

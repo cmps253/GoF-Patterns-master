@@ -2,33 +2,15 @@
 {
     public class GraduateAssistant
     {
-        private string aubId;
-        private string name;
-        private double gpa;
-
         public GraduateAssistant(string aubId, double gpa, string name)
         {
-            this.aubId = aubId;
-            this.gpa = gpa;
-            this.name = name;
+            this.AUBID= aubId;
+            this.GPA = gpa;
+            this.Name = name;
         }
 
-        public string AUBID
-        {
-            get { return aubId; }
-            set { aubId = value; }
-        }
-
-        public double GPA
-        {
-            get { return gpa; }
-            set { gpa = value; }
-        }
-
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
+        public string AUBID { get; set; }
+        public double GPA { get; set; }
+        public string Name { get; set; }
     }
 }

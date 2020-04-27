@@ -2,7 +2,7 @@
 
 namespace CMPS253.GoFPatterns.Behavioral.Command
 {
-    public class CalculatorCommand : Command
+    public class CalculatorCommand : Command //Invoker
     {
         private Calculator calculator;
 

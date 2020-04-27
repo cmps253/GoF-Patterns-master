@@ -8,7 +8,7 @@ namespace CMPS253.GoFPatterns.Behavioral.Template
 
         public virtual void Connect()
         {
-            connectionString = @"provider=Microsoft.JET.OLEDB.4.0;data source=C:\Users\teach\Desktop\253\db1.mdb";
+            connectionString = @"provider=Microsoft.JET.OLEDB.4.0;data source=db1.mdb";
         }
         public abstract void Select();
         public abstract void Process();

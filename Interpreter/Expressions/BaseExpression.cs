@@ -1,6 +1,6 @@
 ﻿namespace CMPS253.GoFPatterns.Behavioral.Interpreter
 {
-    public abstract class Expression
+    public abstract class BaseExpression
     {
         public void Interpret(Context context)
         {

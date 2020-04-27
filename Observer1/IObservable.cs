@@ -3,8 +3,8 @@
     //an observable maintains a list of observers and notifies them whenever its state changes
     public interface IObservable
     {
-        bool Register(IObserver observer);
-        void Drop(IObserver observer);
+        void Attach(IInvestor observer);
+        void Detach(IInvestor observer);
         void Notify();
     }
 }
