@@ -25,7 +25,7 @@ namespace IceCreamParlor
 
             Console.WriteLine("What size of serving?");
             string size = Console.ReadLine().ToLower();
-
+            //CLI client to be continued, complete it by first initializing an IceCreamBuilder then calling on its methods as you ask the user questions and get replies. Finally, build the ice cream serving and print it.
 
             //Fluent Interface
             IceCream IceCream  = 
