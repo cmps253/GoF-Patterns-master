@@ -9,7 +9,7 @@ namespace CMPS253.GoFPatterns.Behavioral.Visitor
            
             #region old
             var towns = new Towns();
-            var w = new FileWrapper(@"C:\Users\bdeir\OneDrive - American University of Beirut\Lebanon_Villages_elevations.csv");
+            var w = new FileWrapper(@"Lebanon_Villages_elevations.csv");
             foreach (var line in w.Records)
             {
                 towns.Attach(new Town(line.getTown(), line.getElevation()));
