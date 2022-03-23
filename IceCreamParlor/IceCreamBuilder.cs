@@ -9,32 +9,32 @@ namespace IceCreamParlor
     /// </summary>
     public class IceCreamBuilder
     {
-        private IceCream serving;
+        private IceCream _serving;
         IceCreamBuilder(BaseIceCreamContainer container)
         {
-            serving = IceCream.CreateInstance(container);
+            _serving = IceCream.CreateInstance(container);
         }
         public static IceCreamBuilder CreateInstance(BaseIceCreamContainer container) => new IceCreamBuilder(container);
 
         public IceCreamBuilder SetSize(BaseIceCreamContainer.ContainerSize size)
         {
-            if(serving==null)
-            serving.Container.Size = size;
+            if(_serving==null)
+            _serving.Container.Size = size;
             return this;
         }
         public IceCreamBuilder AddScoop(BaseScoop scoop)
         {
-            serving.Scoops.Add(scoop);
+            _serving.Scoops.Add(scoop);
             return this;
         }
 
         public IceCreamBuilder AddTopping(BaseTopping toping)
         {
-            serving.Toppings.Add(toping);
+            _serving.Toppings.Add(toping);
             return this;
         }
 
 
-        public IceCream Build() => serving;
+        public IceCream Build() => _serving;
     }
 }

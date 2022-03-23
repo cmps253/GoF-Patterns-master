@@ -17,11 +17,12 @@ namespace Computer
             Model = model;
         }
 
-        public static Computer CreateInstance(string make, string mode) => new Computer(make, mode);
+        internal static Computer CreateInstance(string make, string mode) => new Computer(make, mode);
         public override string ToString()
         {
             var sb = new StringBuilder($"{Make} {Model}\n");
             Disks.ForEach(d => sb.Append(d));
+            sb.Append(CPU);
             return sb.ToString();
         }
     }

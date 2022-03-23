@@ -7,7 +7,7 @@ namespace CMPS253.GoFPatterns.Creational.Prototype
         public int Red;
         public int Green;
         public int Blue;
-
+        
         // Constructor
         public Color(int red, int green, int blue)
         {
@@ -16,6 +16,12 @@ namespace CMPS253.GoFPatterns.Creational.Prototype
             this.Blue = blue;
         }
 
+        public Color(Color that) //copy constructor
+        {
+            this.Red   = that.Red;
+            this.Green = that.Green;
+            this.Blue  = that.Blue;
+        }
         // Create a shallow copy
         public ICloneable Clone()
         {

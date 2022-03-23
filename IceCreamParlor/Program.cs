@@ -11,13 +11,13 @@ namespace IceCreamParlor
         {
             Console.WriteLine("Welcome to CMPS253 Ice Cream Parlor");
 
-            IceCreamBuilder builder=null;
+            IceCreamBuilder builder = null;
 
             Console.WriteLine("Would you like a cup(u) or a cone(o)?");
             string container = Console.ReadLine().ToLower();
-            
+
             string doughtype = null;
-            if(container=="o")
+            if (container == "o")
             {
                 Console.WriteLine("What kind of a cone?");
                 doughtype = Console.ReadLine().ToLower();

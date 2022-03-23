@@ -15,7 +15,7 @@ namespace IceCreamParlor
         {
             this.Container = container;
         }
-        public static IceCream CreateInstance(BaseIceCreamContainer container) => new IceCream(container);
+        internal static IceCream CreateInstance(BaseIceCreamContainer container) => new IceCream(container);
         public override string ToString()
         {
             var sb = new StringBuilder();

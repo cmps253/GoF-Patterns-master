@@ -4,10 +4,10 @@ namespace Singleton
 {
     public class Logger
     {
-        private static Logger _logger;
-
         private Logger(){}
 
+
+        private static Logger _logger;
         public static Logger GetLogger()
         {
             if(_logger==null)
@@ -17,14 +17,5 @@ namespace Singleton
             return _logger;
         }
         public void Log(string msg) => Console.WriteLine($"{DateTime.Now} {msg}");
-        private string fmt;
-        public void ChangeFormat(string fmt)
-        {
-            this.fmt = fmt;
-        }
-        public override string ToString()
-        {
-            return fmt;
-        }
     }
 }

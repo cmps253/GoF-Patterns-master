@@ -6,15 +6,19 @@ namespace CMPS253.GoFPatterns.Creational.Prototype
     {
         static void Main()
         {
-            var red1 = new Color(255, 0, 0);
-            var red2 = red1.Clone() as Color;
-            red2.Blue = 255;
-            System.Console.WriteLine(red1);
-            System.Console.WriteLine(red2);
-            //return;
+            var c1 = new Color(255, 0, 0);
+            var c2 = c1.Clone() as Color;
+
+            System.Console.WriteLine(c1);
+            System.Console.WriteLine(c2);
+            c2.Blue = 255;
+            System.Console.WriteLine(c1);
+            System.Console.WriteLine(c2);
+            System.Console.WriteLine(c1==c2);
+            return;
 
             var colors = new Dictionary<string, ICloneable>();
-            colors.Add("red1", red1);
+            colors.Add("red1", c1);
             colors.Add("green", new Color(0, 255, 0));
             colors.Add("blue", new Color(0, 0, 255));
 
@@ -28,12 +32,12 @@ namespace CMPS253.GoFPatterns.Creational.Prototype
             Color peaceCloned = colors["peace"].Clone() as Color;
             Color flameCloned = colors["flame"].Clone() as Color;
 
-            red1 = colors["red1"] as Color;
+            c1 = colors["red1"] as Color;
 
-            red1.Green = 255;
+            c1.Green = 255;
 
             System.Console.WriteLine(redCloned);
-            System.Console.WriteLine(red1);
+            System.Console.WriteLine(c1);
         }
     }
 }

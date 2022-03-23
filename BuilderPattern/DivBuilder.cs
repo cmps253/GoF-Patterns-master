@@ -2,12 +2,12 @@
 {
     public class DivBuilder
     {
-        Div div;
+        Div _div;
 
         #region Constructors
         DivBuilder(string value)
         {
-            div = new Div(value);
+            _div = new Div(value);
         }
 
         public static DivBuilder CreateInstance(string value)
@@ -18,13 +18,10 @@
 
         public DivBuilder AddStyle(Style style)
         {
-            div.style = style;
+            _div.style = style;
             return this;
         }
 
-        public Div Build()
-        {
-            return div;
-        }
+        public Div Build() => _div;
     }
 }
